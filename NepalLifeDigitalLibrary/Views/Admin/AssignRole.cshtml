@@ -1,0 +1,59 @@
+﻿@model DigitalLibrarySystem.Models.AssignRole
+
+@{
+    ViewData["Title"] = "Assign Role to User";
+}
+
+    <style>
+        .page-container {
+            -ms-flex-align: center;
+            align-items: center;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            height: 100%;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+    </style>
+    <div class="page-container">
+        <div class="login-box">
+            <div class="login-logo">
+                <p>Assign Role</p>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <p class="login-box-msg">Assign role to user</p>
+                @using (Html.BeginForm("AssignRole", "Admin", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true, "", new {@class = "text-danger"})
+
+                    @Html.LabelFor(m => m.UserName, "Username", new {@class = "form-label"})
+                    <div class="input-group mb-3">
+                        @Html.TextBoxFor(m => m.UserName, new {@class = "form-control", @placeholder = "Enter username"})
+                    </div>
+                    <div class="mb-3">
+                        @Html.ValidationMessageFor(m => m.UserName, "", new {@class = "text-danger"})
+                    </div>
+
+                    @Html.LabelFor(m => m.RoleName, "Role", new {@class = "form-label"})
+                    <div class="input-group mb-3">
+                        @Html.TextBoxFor(m => m.RoleName, new {@class = "form-control", @placeholder = "Enter role"})
+                    </div>
+                    <div class="mb-3">
+                        @Html.ValidationMessageFor(m => m.RoleName, "", new {@class = "text-danger"})
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary btn-block">Assign</button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
