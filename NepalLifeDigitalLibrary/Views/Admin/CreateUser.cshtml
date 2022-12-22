@@ -3,23 +3,24 @@
 @{
     ViewData["Title"] = "Create User Page";
 }
-    <style>
-        .create-page-container{
-            -ms-flex-align: center;
-            align-items: center;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            -ms-flex-pack: center;
-            justify-content: center;
-        }
-        .create-box{
-            width: 520px;
-        }
-    </style>
+<style>
+    .create-page-container {
+        -ms-flex-align: center;
+        align-items: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
 
-    
+    .create-box {
+        width: 520px;
+    }
+</style>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -208,7 +209,7 @@
             <div class="table-wrapper">
                 <div class="table-title">
                     <div class="row">
-                       
+
                         <div class="col-sm-8">
                             <button type="button" class="btn btn-info add-new" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus"></i>Create User</button>
                             <button type="button" class="btn btn-danger delete"><i class="fa fa-minus"></i> Delete</button>
@@ -234,8 +235,12 @@
                                 </span>
                             </th>
                             <th>S.N.</th>
-                            <th>Department Name <i class="fa fa-sort"></i></th>
-                            <th>Description</th>
+                            <th>Email<i class="fa fa-sort"></i></th>
+                            <th>User Name</th>
+                            <th>Password</th>
+                            <th>Confirm Password</th>
+                            <th>Role Name</th>
+                            <th>Department Name</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -250,6 +255,10 @@
                             <td>1</td>
                             <td>Thomas Hardy</td>
                             <td>89 Chiaroscuro Rd.</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>
                                 <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                                 <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
@@ -266,6 +275,10 @@
                             <td>2</td>
                             <td>Maria Anders</td>
                             <td>Obere Str. 57</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>
                                 <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                                 <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
@@ -282,6 +295,10 @@
                             <td>3</td>
                             <td>Fran Wilson</td>
                             <td>C/ Araquil, 67</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>
                                 <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                                 <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
@@ -298,6 +315,10 @@
                             <td>4</td>
                             <td>Dominique Perrier</td>
                             <td>25, rue Lauriston</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>
                                 <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                                 <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
@@ -314,6 +335,10 @@
                             <td>5</td>
                             <td>Martin Blank</td>
                             <td>Via Monte Bianco 34</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>
                                 <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                                 <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
@@ -330,6 +355,10 @@
                             <td>5</td>
                             <td>Martin Blank</td>
                             <td>Via Monte Bianco 34</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>
                                 <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                                 <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
@@ -346,6 +375,10 @@
                             <td>5</td>
                             <td>Martin Blank</td>
                             <td>Via Monte Bianco 34</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>
                                 <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                                 <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
@@ -362,6 +395,10 @@
                             <td>5</td>
                             <td>Martin Blank</td>
                             <td>Via Monte Bianco 34</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>
                                 <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                                 <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
@@ -378,6 +415,10 @@
                             <td>5</td>
                             <td>Martin Blank</td>
                             <td>Via Monte Bianco 34</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>
                                 <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                                 <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
@@ -394,6 +435,10 @@
                             <td>5</td>
                             <td>Martin Blank</td>
                             <td>Via Monte Bianco 34</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>
                                 <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                                 <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
@@ -495,13 +540,13 @@
                                 <button type="submit" id="saveKYCRequest" class="btn btn-primary">+ Add</button>
                             </div>
                         </div>
-                    }        
+                    }
                 </div>
             </div>
-            
+
         </div>
     </div>
 </div>
 
 
-    
+
