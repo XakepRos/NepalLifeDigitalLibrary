@@ -67,8 +67,16 @@
 
                     @Html.LabelFor(m => m.RoleName, "Role (Optional)", new {@class = "form-label"})
                     <div class="input-group mb-3">
-                        @Html.TextBoxFor(m => m.RoleName, new {@class = "form-control", @placeholder = "Enter role"})
+                        @*@Html.DropDownListFor(m => m.RoleName, new SelectList(Enum.GetValues(typeof(Role))), "Select role")*@
+                        @*@Html.DropDownListFor(m => m.RoleName, new SelectList(ViewBag.RoleName, "Select Role"))*@
+                        @Html.TextBoxFor(m => m.RoleName, new {@class = "form-control", @placeholder = "Enter Role"})
                     </div>
+
+                    
+
+                    
+
+
                     <div class="mb-3">
                         @Html.ValidationMessageFor(m => m.RoleName, "", new {@class = "text-danger"})
                     </div>
@@ -80,6 +88,9 @@
                     <div class="mb-3">
                         @Html.ValidationMessageFor(m => m.DepartmentName, "", new {@class = "text-danger"})
                     </div>
+
+                    
+
                     <div class="row">
                         <div class="col-4">
                             <button type="submit" class="btn btn-primary btn-block">Create</button>

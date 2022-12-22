@@ -13,7 +13,7 @@ namespace DigitalLibrarySystem.Models
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
-        [MinLength(6, ErrorMessage = "Must be atleast 6 character long.")]
+        [MinLength(5, ErrorMessage = "Must be atleast 5 character long.")]
         public string UserName { get; set; }
 
         [Required(ErrorMessage = "Required")]

@@ -69,15 +69,18 @@ namespace DigitalLibrarySystem.Controllers
                                     if (!roleResult.Succeeded)
                                     {
                                         ModelState.AddModelError(String.Empty, "Failed to create User. Try again.");
+                                        ViewBag.RoleName = user.RoleName;
                                         return View(user);
                                     }
                                 }
                                 else
                                 {
                                     ModelState.AddModelError(String.Empty, "Role does not exist. Please create first and try again.");
+                                    ViewBag.RoleName = user.RoleName;
                                     return View(user);
                                 }
                             }
+                           
 
                             if (user.DepartmentName != null)
                             {
@@ -141,7 +144,7 @@ namespace DigitalLibrarySystem.Controllers
                         return View(role);
                     }
                 }
-            }
+            }            
             return View();
         }
 

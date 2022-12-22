@@ -4,6 +4,7 @@ using DigitalLibrarySystem.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DigitalLibrarySystem.Migrations
 {
     [DbContext(typeof(DbaseContext))]
-    partial class DbaseContextModelSnapshot : ModelSnapshot
+    [Migration("20221209083320_Digital_Library_Create")]
+    partial class Digital_Library_Create
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
